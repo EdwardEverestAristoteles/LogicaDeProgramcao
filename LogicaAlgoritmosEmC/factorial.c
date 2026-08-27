@@ -15,6 +15,7 @@
 
     int factorial = factorialFunction(number);
 
+    //This condition checks if the factorial exists.
     if (factorial != 0) {
         printf("The factorial of %d is %d\n", number, factorial);
     } else {
