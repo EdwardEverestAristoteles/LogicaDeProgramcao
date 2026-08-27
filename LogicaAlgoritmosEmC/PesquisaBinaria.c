@@ -17,7 +17,7 @@ int main(){
 
  
 
-    int result = ListaBinaria(list, 8, number);
+    int result = ListaBinaria(list, 8, number); //This variable will insert the number entered by the user into the Binary List function, as an argument of the function.
     if (result != -1) { 
         printf("\nThe number %d is at position %d\n", number, result);
     }
