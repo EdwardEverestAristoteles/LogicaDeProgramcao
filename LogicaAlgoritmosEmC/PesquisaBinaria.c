@@ -29,6 +29,7 @@ int main(){
     
 }
 
+//This function is responsible for performing the binary search operation.
 int ListaBinaria (int list[], int lenth, int number) {
     int low = 0;
     int high = lenth - 1;
