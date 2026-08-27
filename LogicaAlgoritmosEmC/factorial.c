@@ -27,9 +27,9 @@
  int factorialFunction(int n){
 
     int result=1; 
-    if (n !=0){
-        for (int i=1; i<=n; i++){
-            result=result*i;
+    if (n !=0){ // This condition evaluates whether the value is different from zero.
+        for (int i=1; i<=n; i++){ //If the answer is true, it will execute these instructions.
+            result=result*i;  //To find the factorial of a number, we have to multiply that number by its natural number predecessors, excluding zero.
             printf("Intermediate result after multiplying by %d is %d\n", i, result);
         }
     }
