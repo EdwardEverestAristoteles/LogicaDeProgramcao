@@ -3,7 +3,7 @@ In this space I ran an algorithm that performs binary search.
 */
 import 'dart:io'; 
 
-List<int> collection = [1, 3, 7, 11, 17];
+List<int> collection = [1, 3, 7,8,9];
 
 
 void main(){
@@ -21,9 +21,11 @@ int binarySearch(List<int> collection, int target) {
   int left = 0;
   int right = collection.length - 1;
   while (left <= right) {
-    int mid = left + (right - left) ~/ 2;
+    int mid = (right+left)  ~/ 2;
     if (collection[mid] == target) {
-      return mid;
+      
+       return mid;
+       break; 
     } else if (collection[mid] < target) {
       left = mid + 1;
     } else {
