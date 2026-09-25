@@ -5,11 +5,6 @@ import 'dart:io';
 
 void main() {
   //Program startup
-  print("Welcome to the Divisor Calculator!\n");
-  print("If you want start, press Enter twince:");
-  stdin.readLineSync()!;
-
-  if (stdin.readLineSync() != null) {
     while (true) {
       int anynumber = inicializing();
       calculateDivisores(anynumber);
@@ -24,7 +19,6 @@ void main() {
       }
     }
   }
-}
 
 int calculateDivisores(int numberTyped) {
   int divisors = 0;
@@ -37,8 +31,19 @@ int calculateDivisores(int numberTyped) {
     }
 
     print("The divisors of $numberTyped are: $divisors \n");
+    evenOrOddNumber(numberTyped);
   }
   return divisors;
+}
+
+void evenOrOddNumber(int numberTyped) {
+  
+  if (numberTyped % 2 == 0) {
+    print("The number is $numberTyped is even");
+  } else if (numberTyped ~/ numberTyped == 1 && numberTyped ~/ 1 == numberTyped && !(numberTyped%3==0) ) {
+    print("The number $numberTyped is prime number");
+  } else
+    print("Is $numberTyped odd number"); 
 }
 
 int inicializing() {
